@@ -9,8 +9,7 @@ SECRET_KEY = '0h2qqqa!9@x_u4#66pj4mq8t!qo4ck&=8%q*h%ta+&v9a936k('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1', 'exodox.shop', '34.229.66.44', 'localhost']
-
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -112,9 +111,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static_in_env')]
-STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media_root')
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Auth
 
